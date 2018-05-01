@@ -569,6 +569,7 @@
 	],
 	"file_history":
 	[
+		"/D/XAMPP/htdocs/comida/readme.md",
 		"/D/XAMPP/htdocs/comida/.env",
 		"/D/XAMPP/htdocs/almacen/app/Models/Marca.php",
 		"/D/XAMPP/htdocs/almacen/app/Http/Controllers/Inventario/MarcaController.php",
@@ -695,8 +696,7 @@
 		"/D/XAMPP/htdocs/almacen/resources/views/librerias/js/mensajes.blade.php",
 		"/D/XAMPP/htdocs/almacen/resources/views/plantilla/include/menuPrincipal.blade.php",
 		"/D/XAMPP/htdocs/almacen/app/Http/Requests/MarcaRequest.php",
-		"/D/XAMPP/htdocs/almacen/resources/views/admin/inventario/configuracion/marca/include/ingresar.blade.php",
-		"/D/XAMPP/htdocs/contabilidad/readme.md"
+		"/D/XAMPP/htdocs/almacen/resources/views/admin/inventario/configuracion/marca/include/ingresar.blade.php"
 	],
 	"find":
 	{
