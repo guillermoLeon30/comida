@@ -20,5 +20,6 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group(['middleware' => 'auth'], function (){
-	Route::resource('menu', 'MenuController');  
+	Route::resource('menu', 'MenuController');
+	Route::resource('platos', 'PlatosController');
 });
