@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\platoRequest;
+use App\Models\Plato;
+use Illuminate\Support\Facades\DB;
 
 class PlatosController extends Controller
 {
@@ -32,8 +35,19 @@ class PlatosController extends Controller
    * @param  \Illuminate\Http\Request  $request
    * @return \Illuminate\Http\Response
    */
-  public function store(Request $request){
-    dd($request->all());
+  public function store(platoRequest $request){
+    DB::beginTransaction();
+
+    try {
+      Plato::guardar($request);
+      DB::commit();
+
+      return response()->json([]);
+    } catch (\Exception $e) {
+      DB::rollBack();
+      dd($e);
+      return response()->json([], 500);
+    }
   }
 
   /**

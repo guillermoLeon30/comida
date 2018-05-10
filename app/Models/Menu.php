@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Menu extends Model
 {
-	public $timestamps = false;
+  public $timestamps = false;
   protected $fillable = ['nombre'];
 
   //------------------------------------ALCANCES----------------------------------
