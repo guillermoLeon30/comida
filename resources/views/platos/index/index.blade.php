@@ -30,57 +30,10 @@
           </div>
         </div>
         
-        <div class="box-body table-responsive no-padding">
-          <table class="table table-hover">
-            <thead>
-              <tr>
-                <th></th>
-                <th>Imagen</th>
-                <th>Nombre</th>
-                <th>Precio</th>
-                <th>Activo</th>
-                <th>Opciones</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <button class="btn btn-warning">
-                    <i class="glyphicon glyphicon-arrow-up"></i>
-                  </button>
-                  <button class="btn btn-warning">
-                    <i class="glyphicon glyphicon-arrow-down"></i>
-                  </button>
-                </td>
-                <td><img src="#" alt="imagen"></td>
-                <td>Fideos con carne</td>
-                <td>$56.23</td>
-                <td><span class="label label-success">Activado</span></td>
-                <td>
-                  <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  <button class="btn btn-warning">
-                    <i class="glyphicon glyphicon-arrow-up"></i>
-                  </button>
-                  <button class="btn btn-warning">
-                    <i class="glyphicon glyphicon-arrow-down"></i>
-                  </button>
-                </td>
-                <td><img src="#" alt="imagen"></td>
-                <td>Papa con queso</td>
-                <td>$42.30</td>
-                <td><span class="label label-danger">Desactivado</span></td>
-                <td>
-                  <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        <div id="tPlatos">
+          @include('platos.index.include.tPlatos')
         </div>
+        
       </div>
     </div>
   </div>

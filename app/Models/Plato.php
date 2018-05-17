@@ -16,6 +16,11 @@ class Plato extends Model
     return $this->belongsToMany('App\Models\Menu', 'plato_menu');
   }
 
+  //------------------------------------ALCANCES----------------------------------
+  public function scopeBuscar($query, $buscar){
+    return $query->where('nombre', 'like', '%'.$buscar.'%');
+  }
+
   //------------------------------------METODOS--------------------------------
   /**
    * Guarda plato
