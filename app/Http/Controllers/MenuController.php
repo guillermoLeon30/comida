@@ -104,4 +104,12 @@ class MenuController extends Controller
   {
       //
   }
+
+  public function activar(Menu $menu){
+    dd($menu);
+  }
+
+  public function desactivar(Menu $menu){
+    # code...
+  }
 }

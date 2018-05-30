@@ -49,4 +49,5 @@
   @include('librerias.js.mensajes')
   @include('menu.index.js.js')
   @include('menu.index.js.jsGuardarMenu')
+  @include('menu.index.js.jsActivarDesactivar')
 @endpush

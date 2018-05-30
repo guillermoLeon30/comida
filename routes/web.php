@@ -20,6 +20,10 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group(['middleware' => 'auth'], function (){
-	Route::resource('menu', 'MenuController');
-	Route::resource('platos', 'PlatosController');
+  Route::resource('menu', 'MenuController');
+  Route::prefix('menu')->group(function (){
+    Route::get('activar/{menu}', 'MenuController@activar');
+    Route::get('desactivar/{menu}', 'MenuController@desactivar');
+  });
+  Route::resource('platos', 'PlatosController');
 });

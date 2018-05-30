@@ -23,7 +23,7 @@
 
           <div class="box-tools">
             <div class="input-group input-group-sm" style="width: 200px;">
-              <input type="text" name="table_search" class="form-control pull-right" placeholder="Buscar">
+              <input type="text" id="buscar" class="form-control pull-right" placeholder="Buscar">
 
               <div class="input-group-addon"><i class="fa fa-search"></i></div>
             </div>

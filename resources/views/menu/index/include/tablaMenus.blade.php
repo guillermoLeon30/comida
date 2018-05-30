@@ -21,11 +21,11 @@
 
         <td>
           @if($menu->activo)
-            <button class="btn btn-success disabled">
-              Activar
+            <button class="btn btn-danger">
+              Desactivar
             </button>
           @else
-            <button class="btn btn-success">
+            <button class="btn btn-success" onclick="activar({{ $menu->id }})">
               Activar
             </button>
           @endif
