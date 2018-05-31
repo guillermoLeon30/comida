@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests\menuRequest;
 use App\Models\Menu;
+use App\Events\ActivarMenuEvent;
 
 class MenuController extends Controller
 {
@@ -106,7 +107,10 @@ class MenuController extends Controller
   }
 
   public function activar(Menu $menu){
-    dd($menu);
+    //$menu->activar();
+    event(new ActivarMenuEvent($menu));
+
+    return response()->json([]);
   }
 
   public function desactivar(Menu $menu){

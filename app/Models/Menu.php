@@ -26,8 +26,20 @@ class Menu extends Model
    * @param  string  $buscar
    * @return arr  $platos
    */
-
   public function buscarPlatos($buscar){
     return $this->platos()->where('nombre', 'like', '%'.$buscar.'%');
   }
+
+  /**
+   * Activar menu. Es decir enviar informacion por Broadcasting.
+   *
+   * @param  
+   * @return 
+   */
+  public function activar(){
+    Menu::where('activo', 1)->update(['activo' => 0]);
+    $this->activo = 1;
+    $this->save();
+  }
+
 }
