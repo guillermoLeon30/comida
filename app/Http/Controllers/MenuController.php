@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests\menuRequest;
 use App\Models\Menu;
+use App\Events\ActivarMenuEvent;
 
 class MenuController extends Controller
 {
@@ -66,9 +67,20 @@ class MenuController extends Controller
    * @param  int  $id
    * @return \Illuminate\Http\Response
    */
-  public function edit($id)
-  {
-      //
+  public function edit(Request $request, Menu $menu){
+    $filtro = (isset($request->filtro) && !empty($request->filtro))?$request->filtro:'';
+    $page = $request->page;
+
+    $platos = $menu->buscarPlatos($filtro)->paginate(5);
+
+    if ($request->ajax()) {
+      return response()->json(view('platos.index.include.tPlatos', ['platos' => $platos])->render());
+    }
+
+    return view('platos.index.index', [
+      'menu'    =>  $menu,
+      'platos'  =>  $platos
+    ]);
   }
 
   /**
@@ -92,5 +104,16 @@ class MenuController extends Controller
   public function destroy($id)
   {
       //
+  }
+
+  public function activar(Menu $menu){
+    //$menu->activar();
+    event(new ActivarMenuEvent($menu));
+
+    return response()->json([]);
+  }
+
+  public function desactivar(Menu $menu){
+    # code...
   }
 }

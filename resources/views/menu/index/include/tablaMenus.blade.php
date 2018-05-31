@@ -25,14 +25,14 @@
               Activar
             </button>
           @else
-            <button class="btn btn-success">
+            <button class="btn btn-success" onclick="activar({{ $menu->id }})">
               Activar
             </button>
           @endif
 
-          <button class="btn btn-info">
+          <a class="btn btn-info" href="{{ url('menu') }}/{{ $menu->id }}/edit">
             <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
-          </button>
+          </a>
 
           <button class="btn btn-danger">
             <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
