@@ -32,6 +32,6 @@ class ActivarMenuEvent implements ShouldBroadcast
    * @return \Illuminate\Broadcasting\Channel|array
    */
   public function broadcastOn(){
-    return new Channel('activarMenu');
+    return new Channel('menuChannel');
   }
 }
