@@ -45,6 +45,7 @@ class PlatosController extends Controller
       return response()->json([]);
     } catch (\Exception $e) {
       DB::rollBack();
+      dd($e);
       
       return response()->json([], 500);
     }

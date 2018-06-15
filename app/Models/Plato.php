@@ -4,12 +4,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Image;
-use File;
+use Illuminate\Http\File;
 
 class Plato extends Model
 {
   public $timestamps = false;
-  protected $fillable = ['nombre', 'precio', 'imagen'];
+  protected $fillable = ['nombre', 'precio', 'nombre_imagen', 'imagen_url'];
 
   //----------------------------------RELACIONES-------------------------------
   public function menus(){
@@ -30,15 +30,21 @@ class Plato extends Model
    */
   public static function guardar($request){
     $file = $request->file('imagen');
+    $extension = $file->getClientOriginalExtension();
+    $file_name = 'platos/'.time().'.'.$extension;
+    $url = asset('/storage/'.$file_name);
 
     $image = Image::make($file);
     $image->resize(500, null, function ($c){
       $c->aspectRatio();
       $c->upsize();
     });
+    
+    $image->save(storage_path('app/public/').$file_name);
 
     $plato = new Plato($request->all());
-    $plato->imagen = (String) $image->encode('data-url');
+    $plato->nombre_imagen = $file_name;
+    $plato->imagen_url = $url;
     $plato->save();
     $plato->menus()->attach($request->menu_id);
   }

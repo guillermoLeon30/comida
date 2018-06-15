@@ -21,7 +21,7 @@
               <i class="glyphicon glyphicon-arrow-down"></i>
             </button>
           </td>
-          <td><img src="{{ $plato->imagen }}" alt="imagen" height="50px" width="100px"></td>
+          <td><img src="{{ $plato->imagen_url }}" alt="imagen" height="50px" width="100px"></td>
           <td>{{ $plato->nombre }}</td>
           <td>${{ $plato->precio }}</td>
           <td>
