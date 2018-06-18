@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Image;
 use Illuminate\Http\File;
+use Illuminate\Support\Facades\Storage;
 
 class Plato extends Model
 {
@@ -30,9 +31,8 @@ class Plato extends Model
    */
   public static function guardar($request){
     $file = $request->file('imagen');
-    $extension = $file->getClientOriginalExtension();
-    $file_name = 'platos/'.time().'.'.$extension;
-    $url = asset('/storage/'.$file_name);
+    $path = $file->hashName('comida');
+    $url = asset('/storage/'.$path);
 
     $image = Image::make($file);
     $image->resize(500, null, function ($c){
@@ -40,10 +40,10 @@ class Plato extends Model
       $c->upsize();
     });
     
-    $image->save(storage_path('app/public/').$file_name);
+    Storage::disk('public')->put($path, (string) $image->encode());
 
     $plato = new Plato($request->all());
-    $plato->nombre_imagen = $file_name;
+    $plato->nombre_imagen = $path;
     $plato->imagen_url = $url;
     $plato->save();
     $plato->menus()->attach($request->menu_id);

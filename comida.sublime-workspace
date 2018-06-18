@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"fi",
+				"file"
+			],
+			[
+				"file",
+				"file_name"
+			],
+			[
 				"me",
 				"menu"
 			],
@@ -288,10 +296,6 @@
 				"List"
 			],
 			[
-				"fi",
-				"filteredData"
-			],
-			[
 				"so",
 				"sortkey"
 			],
@@ -510,20 +514,42 @@
 			[
 				"son",
 				"songs"
-			],
-			[
-				"song",
-				"songId"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
+			"file": "routes/web.php",
+			"settings":
+			{
+				"buffer_size": 859,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "app/Models/Plato.php",
 			"settings":
 			{
-				"buffer_size": 1147,
+				"buffer_size": 1381,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/Http/Controllers/MenuController.php",
+			"settings":
+			{
+				"buffer_size": 2532,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/Events/ActivarMenuEvent.php",
+			"settings":
+			{
+				"buffer_size": 996,
 				"line_ending": "Windows"
 			}
 		},
@@ -531,7 +557,7 @@
 			"file": "app/Http/Controllers/PlatosController.php",
 			"settings":
 			{
-				"buffer_size": 1687,
+				"buffer_size": 1701,
 				"line_ending": "Windows"
 			}
 		}
@@ -581,37 +607,50 @@
 	},
 	"expanded_folders":
 	[
-		"/D/XAMPP/htdocs/comida",
-		"/D/XAMPP/htdocs/comida/app"
+		"/D/xampp/htdocs/comida",
+		"/D/xampp/htdocs/comida/app",
+		"/D/xampp/htdocs/comida/resources",
+		"/D/xampp/htdocs/comida/resources/views",
+		"/D/xampp/htdocs/comida/resources/views/platos",
+		"/D/xampp/htdocs/comida/resources/views/platos/index"
 	],
 	"file_history":
 	[
-		"/D/XAMPP/htdocs/comida/routes/web.php",
-		"/D/XAMPP/htdocs/comida/.env",
-		"/D/XAMPP/htdocs/comida/resources/views/menu/index/index.blade.php",
-		"/D/XAMPP/htdocs/comida/app/Events/ActivarMenuEvent.php",
-		"/D/XAMPP/htdocs/comida/app/Http/Controllers/MenuController.php",
-		"/D/XAMPP/htdocs/comida/app/Models/Menu.php",
+		"/D/xampp/htdocs/comida/vendor/intervention/image/src/Intervention/Image/Image.php",
+		"/D/xampp/htdocs/comida/resources/views/platos/index/include/tPlatos.blade.php",
+		"/D/xampp/htdocs/comida/config/app.php",
+		"/D/xampp/htdocs/comida/.env",
+		"/D/xampp/htdocs/comida/config/filesystems.php",
+		"/D/xampp/htdocs/comida/app/Models/Menu.php",
+		"/D/xampp/htdocs/comida/app/Http/Controllers/MenuController.php",
+		"/D/xampp/htdocs/comida/app/Http/Controllers/PlatosController.php",
+		"/D/xampp/htdocs/comida/app/Models/Plato.php",
+		"/D/xampp/htdocs/comida/resources/views/menu/index/index.blade.php",
+		"/D/xampp/htdocs/comida/app/Events/ActivarMenuEvent.php",
+		"/D/xampp/htdocs/comida/config/broadcasting.php",
+		"/D/xampp/htdocs/comida/resources/views/welcome.blade.php",
+		"/D/xampp/htdocs/comida/resources/views/auth/login.blade.php",
+		"/D/xampp/htdocs/comida/resources/views/layouts/app.blade.php",
+		"/D/xampp/htdocs/comida/vendor/laravel/framework/src/Illuminate/Broadcasting/Broadcasters/PusherBroadcaster.php",
 		"/D/XAMPP/htdocs/comida/app/Providers/EventServiceProvider.php",
-		"/D/XAMPP/htdocs/comida/app/Listeners/ActivarMenuListener.php",
-		"/D/XAMPP/htdocs/comida/vendor/laravel/framework/src/Illuminate/Broadcasting/InteractsWithSockets.php",
-		"/D/XAMPP/htdocs/comida/vendor/laravel/framework/src/Illuminate/Queue/SerializesModels.php",
-		"/D/XAMPP/htdocs/comida/vendor/laravel/framework/src/Illuminate/Broadcasting/Broadcasters/PusherBroadcaster.php",
-		"/D/XAMPP/htdocs/comida/vendor/laravel/framework/src/Illuminate/Contracts/Broadcasting/ShouldBroadcast.php",
-		"/D/XAMPP/htdocs/comida/vendor/laravel/framework/src/Illuminate/Broadcasting/Channel.php",
 		"/D/XAMPP/htdocs/comida/app/Providers/BroadcastServiceProvider.php",
 		"/D/XAMPP/htdocs/comida/config/app.php",
 		"/D/XAMPP/htdocs/comida/resources/views/menu/index/include/tablaMenus.blade.php",
 		"/D/XAMPP/htdocs/comida/resources/views/menu/index/js/jsActivarDesactivar.blade.php",
 		"/D/XAMPP/htdocs/comida/config/broadcasting.php",
+		"/D/XAMPP/htdocs/comida/.env",
+		"/D/XAMPP/htdocs/comida/app/Models/Menu.php",
 		"/D/XAMPP/htdocs/comida/resources/views/menu/index/js/jsGuardarMenu.blade.php",
 		"/D/XAMPP/htdocs/comida/resources/views/menu/index/js/js.blade.php",
+		"/D/XAMPP/htdocs/comida/routes/web.php",
+		"/D/XAMPP/htdocs/comida/app/Http/Controllers/MenuController.php",
 		"/D/XAMPP/htdocs/comida/resources/views/platos/index/index.blade.php",
 		"/D/XAMPP/htdocs/comida/resources/views/platos/index/js/jsGuardarPlato.blade.php",
 		"/D/XAMPP/htdocs/comida/resources/views/platos/index/js/js.blade.php",
 		"/D/XAMPP/htdocs/comida/app/Http/Controllers/PlatosController.php",
 		"/D/XAMPP/htdocs/comida/resources/views/platos/index/include/modalIngresarPlato.blade.php",
 		"/D/XAMPP/htdocs/comida/resources/views/platos/index/include/tPlatos.blade.php",
+		"/D/XAMPP/htdocs/comida/resources/views/menu/index/index.blade.php",
 		"/D/XAMPP/htdocs/comida/vendor/phpunit/php-code-coverage/src/Report/Html/Renderer/Template/css/style.css",
 		"/D/XAMPP/htdocs/comida/app/Http/Requests/menuRequest.php",
 		"/D/XAMPP/htdocs/comida/resources/views/menu/index/include/modalIngresarMenu.blade.php",
@@ -704,20 +743,11 @@
 		"/D/XAMPP/htdocs/ejemplo1_j/.env",
 		"/D/XAMPP/htdocs/almacen/resources/views/admin/inventario/producto/create/js/jsTabColores.blade.php",
 		"/D/XAMPP/htdocs/almacen/resources/views/admin/inventario/producto/edit/include/tabDatos.blade.php",
-		"/D/XAMPP/htdocs/almacen/resources/views/admin/inventario/producto/edit/include/cbMarca.blade.php",
-		"/D/XAMPP/htdocs/almacen/resources/views/admin/inventario/producto/edit/include/cbCategoria.blade.php",
-		"/D/XAMPP/htdocs/almacen/resources/views/admin/inventario/producto/create/create.blade.php",
-		"/D/XAMPP/htdocs/almacen/resources/views/admin/inventario/producto/create/js/jsTabDimensiones.blade.php",
-		"/D/XAMPP/htdocs/ejemplo1_j/config/app.php",
-		"/D/XAMPP/htdocs/ejemplo1_j/config/database.php",
-		"/D/XAMPP/htdocs/ejemplo1_j/routes/console.php",
-		"/D/XAMPP/htdocs/ejemplo1_j/routes/channels.php",
-		"/D/XAMPP/htdocs/ejemplo1_j/public/index.php",
-		"/D/XAMPP/htdocs/contabilidad/resources/views/inventario/producto/imagenes/show.blade.php"
+		"/D/XAMPP/htdocs/almacen/resources/views/admin/inventario/producto/edit/include/cbMarca.blade.php"
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 29.0
 	},
 	"find_in_files":
 	{
@@ -812,24 +842,24 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/Models/Plato.php",
+					"file": "routes/web.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1147,
+						"buffer_size": 859,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								768,
+								768
 							]
 						],
 						"settings":
@@ -842,19 +872,109 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 378.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/Models/Plato.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1381,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								994,
+								994
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 180.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/Http/Controllers/MenuController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2532,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1740.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/Events/ActivarMenuEvent.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 996,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								989,
+								989
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 120.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
+					"buffer": 4,
 					"file": "app/Http/Controllers/PlatosController.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1687,
+						"buffer_size": 1701,
 						"regions":
 						{
 						},
@@ -867,18 +987,15 @@
 						],
 						"settings":
 						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 486.0,
+						"translation.y": 360.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -886,7 +1003,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 29.0
 	},
 	"input":
 	{
@@ -927,7 +1044,7 @@
 	"project": "comida.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 54.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -936,6 +1053,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"app",
+				"config\\app.php"
+			],
+			[
+				"image",
+				"vendor\\intervention\\image\\src\\Intervention\\Image\\Image.php"
+			],
 			[
 				"pushe",
 				"vendor\\laravel\\framework\\src\\Illuminate\\Broadcasting\\Broadcasters\\PusherBroadcaster.php"
